@@ -14,7 +14,7 @@ def resize_to16(img_name):
     img16_name = os.path.join(icon16folder, img_name)
     img32 = Image.open(img32_name);
     img16 = img32.resize((16, 16))
-    img16.save(img16_name)
+    img16.save(img16_name)  
     print("成功缩小尺寸：", img_name)
 
 
