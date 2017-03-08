@@ -1,8 +1,11 @@
-import uuid
+def getcodes():
+    import uuid
+    codes = []
+    for i in range(0, 100):
+        codes.append(uuid.uuid1().hex.upper())
 
-codes = []
+    return codes
 
-for i in range(0, 100):
-    codes.append(uuid.uuid1().hex.upper())
 
+codes = getcodes()
 print(codes)
