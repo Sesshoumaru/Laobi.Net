@@ -1,4 +1,5 @@
-Python 练习册，每天一个小程序(windows平台 Python3.5版本)
+**Python 练习册，每天一个小程序**
+    ——(windows平台 Python3.5版本)
 
 部分习题原始出处：https://github.com/Yixiaohan/show-me-the-code
 

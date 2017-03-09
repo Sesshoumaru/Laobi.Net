@@ -1,13 +1,20 @@
-依赖的库：pymysql
+**依赖的库：pymysql**
+
+```
     pip3 install pymysql
+```
 
-1. 在数据库中创建存放激活码的表
+
+1.在数据库中创建存放激活码的表
+```
     create table code(id int not null,code varchar(100) not null)
+```
 
-2. 执行0003.py
+2.执行0003.py
 
-3. 检验结果
+3.检验结果
 
+```
 mysql> select * from code;
 +----+----------------------------------+
 | id | code                             |
@@ -114,3 +121,4 @@ mysql> select * from code;
 | 99 | 868A956503A411E78F585CFF3503A79E |
 +----+----------------------------------+
 100 rows in set (0.00 sec)
+```

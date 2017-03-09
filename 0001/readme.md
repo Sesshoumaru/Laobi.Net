@@ -1,2 +1,4 @@
-依赖的库：pillow
+**依赖的库：pillow**
+```
     pip3 install pillow
+```
