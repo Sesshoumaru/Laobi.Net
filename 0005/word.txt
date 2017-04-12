@@ -1,0 +1,3 @@
+Welcome to the Uploadify documentation library.
+Here you will find an extensive collection of articles to help make implementing Uploadify and UploadiFive easier.
+We also have a small collection of articles in regards to security, sessions, and other related matters.
