@@ -1,4 +1,4 @@
-**Python 练习册，每天一个小程序**
+``**Python 练习册，每天一个小程序**
     ——(windows平台 Python3.5版本)
 
 部分习题原始出处：https://github.com/Yixiaohan/show-me-the-code
@@ -46,3 +46,98 @@
 **第 0012 题：** 敏感词文本文件 filtered_words.txt，里面的内容 和 0011题一样，当用户输入敏感词语，则用 星号 * 替换，例如当用户输入「北京是个好城市」，则变成「**是个好城市」。
 
 **第 0013 题：** 用 Python 写一个爬图片的程序，爬 [这个链接里的日本妹子图片 :-)](http://tieba.baidu.com/p/2166231880)
+
+**第 0014 题：** 纯文本文件 student.txt为学生信息, 里面的内容（包括花括号）如下所示：
+
+    {
+    	"1":["张三",150,120,100],
+    	"2":["李四",90,99,95],
+    	"3":["王五",60,66,68]
+    }
+
+请将上述内容写到 student.xls 文件中，如下图所示：
+
+![student.xls](http://i.imgur.com/nPDlpme.jpg)
+
+- [阅读资料](http://www.cnblogs.com/skynet/archive/2013/05/06/3063245.html) 腾讯游戏开发 XML 和 Excel 内容相互转换
+
+**第 0015 题：** 纯文本文件 city.txt为城市信息, 里面的内容（包括花括号）如下所示：
+
+    {
+        "1" : "上海",
+        "2" : "北京",
+        "3" : "成都"
+    }
+
+请将上述内容写到 city.xls 文件中，如下图所示：
+
+![city.xls](http://i.imgur.com/rOHbUzg.png)
+
+
+**第 0016 题：** 纯文本文件 numbers.txt, 里面的内容（包括方括号）如下所示：
+
+    [
+    	[1, 82, 65535],
+    	[20, 90, 13],
+    	[26, 809, 1024]
+    ]
+
+请将上述内容写到 numbers.xls 文件中，如下图所示：
+
+![numbers.xls](http://i.imgur.com/iuz0Pbv.png)
+
+**第 0017 题：** 将 第 0014 题中的 student.xls 文件中的内容写到 student.xml 文件中，如
+
+下所示：
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <root>
+    <students>
+    <!--
+    	学生信息表
+    	"id" : [名字, 数学, 语文, 英文]
+    -->
+    {
+    	"1" : ["张三", 150, 120, 100],
+    	"2" : ["李四", 90, 99, 95],
+    	"3" : ["王五", 60, 66, 68]
+    }
+    </students>
+    </root>
+
+
+**第 0018 题：** 将 第 0015 题中的 city.xls 文件中的内容写到 city.xml 文件中，如下所示：
+
+    <?xmlversion="1.0" encoding="UTF-8"?>
+    <root>
+    <citys>
+    <!--
+    	城市信息
+    -->
+    {
+    	"1" : "上海",
+    	"2" : "北京",
+    	"3" : "成都"
+    }
+    </citys>
+    </root>
+
+**第 0019 题：** 将 第 0016 题中的 numbers.xls 文件中的内容写到 numbers.xml 文件中，如下
+
+所示：
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <root>
+    <numbers>
+    <!--
+    	数字信息
+    -->
+
+    [
+    	[1, 82, 65535],
+    	[20, 90, 13],
+    	[26, 809, 1024]
+    ]
+
+    </numbers>
+    </root>
