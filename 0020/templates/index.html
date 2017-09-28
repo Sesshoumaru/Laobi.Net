@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言簿</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        .body{
+            width:90%;
+            margin:0 auto;
+        }
+        div{
+            padding:10px 40px;
+        }
+        .title{
+            background-color:#24292E;
+            height:60px;
+            line-height:60px;
+            color:white;
+        }
+        .form{
+            background-color: beige;
+        }
+        label{
+            display:inline-block;
+            width:150px;
+        }
+        p{
+            margin-top:10px;
+        }
+        .content label{
+            position:relative;
+            top:-70px;
+
+        }
+        .content textarea{
+            resize: none;
+        }
+        .list{
+                background-color: darkgray;
+        }
+        li{
+            list-style: none;
+        }
+        .item p{
+            background-color:#eee;
+        }
+    </style>
+</head>
+<body>
+<div class="body">
+    <div class="title">
+        <h1>留言簿</h1>
+    </div>
+    <div class="form">
+        <h3>请尽情留言吧：</h3>
+        <form action="/" method="post">
+            {{ form.hidden_tag() }}
+            <p class="name">{{ form.name.label }} {{ form.name() }}</p>
+            <p class="content">{{ form.content.label }} {{ form.content(cols="60" ,rows="10") }}</p>
+            <p>{{ form.submit() }}</p>
+        </form>
+
+        <!--<form action="/" method="post" >-->
+            <!--<p class="name"><label for="name">姓名</label>-->
+                <!--<input type="text" id="name">-->
+            <!--</p>-->
+            <!--<p class="content"><label for="content"> 内容 </label>-->
+                <!--<textarea name="content" id="content" cols="60" rows="10">-->
+                <!--</textarea>-->
+            <!--</p>-->
+             <!--<p>-->
+                 <!--<input type="submit" value=" 提 交 ">-->
+             <!--</p>-->
+        <!--</form>-->
+    </div>
+    <div class="list">
+        <h2>留言历史信息</h2>
+        <ul class="items">
+            {% for comment in comments %}
+            <li class="item">
+                <h4><span class="item-name">{{comment["name"]}}</span> <span class="item-to">留言于</span> <span
+                        class="item-date">{{comment["date"]}}</span></h4>
+                <p>{{comment["content"]}}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+</body>
+</html>

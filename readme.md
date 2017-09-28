@@ -141,3 +141,14 @@
 
     </numbers>
     </root>
+    
+**第 0020 题：** 使用 Python 的 Web 框架，做一个 Web 版本 留言簿 应用。
+
+[阅读资料：Python 有哪些 Web 框架](http://v2ex.com/t/151643#reply53)
+
+- ![留言簿参考](http://i.imgur.com/VIyCZ0i.jpg)
+
+
+**第 0021 题：** 使用 Python 的 Web 框架，做一个 Web 版本 TodoList 应用。
+
+- ![SpringSide 版TodoList](http://i.imgur.com/NEf7zHp.jpg)
